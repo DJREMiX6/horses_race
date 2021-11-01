@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Cavalli belli</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Horses Form -->
+        <div class="row">
+            <div class="col">
+                <h2 class="text-info">Gestione Cavalli</h2>
+            </div>
+        </div>
+        <div class="row justify-content-evenly">
+            <div class="col-6">
+                <form class="m-2 p-2 border border-dark">
+                    <div class="form-group row mb-2">
+                        <label for="NameInput" class="col-2 col-form-label">Nome</label>
+                        <div class="col-10">
+                            <input type="text" class="form-control" id="NameInput" placeholder="Es. Gianni">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-2">
+                        <label for="DistanceInput" class="col-2 col-form-label">Distanza</label>
+                        <div class="col-10">
+                            <input type="number" class="form-control" id="DistanceInput" placeholder="1234">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-2">
+                        <div class="col-6">
+                          <button type="button" class="btn btn-primary w-100" id="AddButton">Aggiungi</button>
+                        </div>
+                        <div class="col-6">
+                          <button type="button" class="btn btn-danger w-100" id="ClearButton">Cancella Tutto</button>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                          <button type="button" class="btn btn-success w-100" id="StartStopButton">Avvia</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Horses Race -->
+        <div class="row">
+            <div class="col">
+                <h2 class="text-info">Lista Cavalli</h2>
+            </div>
+        </div>
+        <div class="row justify-content-evenly">
+            <div class="col">
+                <div class="container m-2" id="HorsesContainer">
+                    <!-- Horse Container -->
+                    <div class="row border border-dark mb-2">
+                        <div class="col-2">
+                            <label for="progressbar-test">Nome Cavallo</label>
+                        </div>
+                        <div class="col-10">
+                            <div class="progress mt-1">
+                                <div id="progressbar-test" class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/index.js" type="module"></script>
+    </script>
+</body>
+</html>
